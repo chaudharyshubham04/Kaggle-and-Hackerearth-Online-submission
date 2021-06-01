@@ -1,0 +1,17 @@
+Import the train.csv file as df_train
+Import the test.csv file as df_test
+
+Drop the columns ['Insurance_company','Expiry_date'] as they have not much impact on our Prediction
+
+Then check for null values if any using .null().sum()
+If null values is present the fill it using the mean of that columns using dataframe.fillna() method
+
+Make Image_path column as the index
+As the columns are not at same scale so using StandardScaler scale them to unit variance
+
+then import LinearRegresion and fit the model in it
+and predict the outcome of the model and store in some variable
+
+similary for 'Condition' column import Logistic Regression and predict the outcome of the model and store in some variable
+
+Now the final part is make a dataframe using both the predictor variable and Image_path column of test.csv file and change it to .csv format
